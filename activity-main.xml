@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vogella.android.smag_btp.MainActivity">
+
+
+    <TextView android:id="@+id/humid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textSize="28sp" />
+
+    <TextView android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/humid"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Temperature"
+        android:textSize="28sp" />
+
+    <TextView android:id="@+id/intru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Intrusion"
+        android:textSize="28sp" />
+
+    <EditText android:id="@+id/editLowerThreshold"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/intru"
+        android:hint="Add Lower Threshold"
+        android:layout_margin="5dp"
+        android:inputType="number" />
+
+    <EditText android:id="@+id/editHigherThreshold"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/AddLowerThresholdBtn"
+        android:hint="Add Higher Threshold"
+        android:layout_margin="5dp"
+        android:inputType="number" />
+
+    <Button android:text="Add Lower Threshold"
+        android:id="@+id/AddLowerThresholdBtn"
+        android:layout_width="250dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editLowerThreshold"
+        android:layout_margin="5dp"
+        android:layout_height="55dp">
+    </Button>
+
+    <Button android:text="Add Higher Threshold"
+        android:id="@+id/AddHigherThresholdBtn"
+        android:layout_width="250dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editHigherThreshold"
+        android:layout_margin="5dp"
+        android:layout_height="55dp">
+    </Button>
+
+    <Button android:text="Add Data"
+        android:id="@+id/AddDataBtn"
+        android:layout_width="250dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/AddHigherThresholdBtn"
+        android:layout_margin="5dp"
+        android:layout_height="55dp">
+    </Button>
+
+
+    <Button android:text="View Data"
+        android:id="@+id/ViewDataBtn"
+        android:layout_width="250dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/AddDataBtn"
+        android:layout_height="55dp">
+    </Button>
+
+
+</RelativeLayout>
