@@ -81,14 +81,14 @@ public class MainActivity extends Activity{
                     String message = "Temperature = " + RESULT[0] + "\n" + "Moisture = " + RESULT[1] + "\n" + "Intrusion = " + RESULT[2] + "\n" + "Increase Water Content";
                     SendSMS msg = new SendSMS();
                     msg.sendSms(message);
-                    sendSMS("9013105404", message);
+                    sendSMS("yourPhoneNumber", message);
                 }
 
                 else{
                     String message = "Temperature = " + RESULT[0] + "\n" + "Moisture = " + RESULT[1] + "\n" + "Intrusion = " + RESULT[2];
                     SendSMS msg = new SendSMS();
                     msg.sendSms(message);
-                    sendSMS("9013105404", message);
+                    sendSMS("yourPhoneNumber", message);
                 }
 
 
@@ -104,14 +104,14 @@ public class MainActivity extends Activity{
                     String message = "Temperature = " + RESULT[0] + "\n" + "Moisture = " + RESULT[1] + "\n" + "Intrusion = " + RESULT[2] + "\n" + "Decrease Water Content";
                     SendSMS msg = new SendSMS();
                     msg.sendSms(message);
-                    sendSMS("9013105404", message);
+                    sendSMS("yourPhoneNumber", message);
                 }
 
                 else{
                     String message = "Temperature = " + RESULT[0] + "\n" + "Moisture = " + RESULT[1] + "\n" + "Intrusion = " + RESULT[2];
                     SendSMS msg = new SendSMS();
                     msg.sendSms(message);
-                    sendSMS("9013105404", message);
+                    sendSMS("yourPhoneNumber", message);
                 }
 
 
@@ -385,7 +385,7 @@ public class MainActivity extends Activity{
                 String message = "Temperature = " + result[0] + "\n" + "Moisture = " + result[1] + "\n" + "Intrusion = " + result[2] + "\n" + "Intrusion in Farm";
                 SendSMS msg = new SendSMS();
                 msg.sendSms(message);
-                sendSMS("9013105404", message);
+                sendSMS("yourPhoneNumber", message);
             }
             addData(temp,humid,intru);
             viewAll();
